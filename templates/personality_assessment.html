@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interest Quiz</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    
+</head>
+
+<body class="bg-gradient-to-br from-blue-500 to-green-500 min-h-screen flex items-center justify-center">
+
+<div class="bg-white p-8 mt-10 rounded-xl shadow-lg w-full max-w-3xl">
+
+    <h1 class="text-2xl font-bold text-center mb-6">Personality Checking Quiz</h1>
+
+    <form action="/personality_assessment" method="POST"> 
+
+        <!-- Question Template -->
+        <!-- Repeat for 6 Questions -->
+<h1 style="font-size: 25px; font-weight: bold;" >Realistic</h1><br>
+        <div class="mb-6">
+            <p class="font-semibold">1.I enjoy repairing electronic devices or machines.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q1_r" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q1_r" value="4"> Agree</label><br>
+                <label><input type="radio" name="q1_r" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q1_r" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q1_r" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <p class="font-semibold">2.I enjoy practical lab experiments.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q2_r" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q2_r" value="4"> Agree</label><br>
+                <label><input type="radio" name="q2_r" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q2_r" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q2_r" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <p class="font-semibold">3.I like working with tools and equipment.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q3_r" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q3_r" value="4"> Agree</label><br>
+                <label><input type="radio" name="q3_r" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q3_r" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q3_r" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <p class="font-semibold">4.I prefer physical work over theoretical discussions.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q4_r" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q4_r" value="4"> Agree</label><br>
+                <label><input type="radio" name="q4_r" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q4_r" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q4_r" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <p class="font-semibold">5.I enjoy subjects involving technical drawing or mechanics.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q5_r" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q5_r" value="4"> Agree</label><br>
+                <label><input type="radio" name="q5_r" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q5_r" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q5_r" value="1"> Strongly Disagree</label>
+            </div>
+        </div><br><br>
+
+
+        
+
+
+        <h1 style="font-size: 25px; font-weight: bold;">Investigative</h1><br>
+        <div class="mb-6">
+            <p class="font-semibold">1.I enjoy solving complex math problems.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q1_i" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q1_i" value="4"> Agree</label><br>
+                <label><input type="radio" name="q1_i" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q1_i" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q1_i" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">2.I am curious about how things work scientifically.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q2_i" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q2_i" value="4"> Agree</label><br>
+                <label><input type="radio" name="q2_i" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q2_i" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q2_i" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">3.I am interested in subjects like Physics, Chemistry, or Biology.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q3_i" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q3_i" value="4"> Agree</label><br>
+                <label><input type="radio" name="q3_i" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q3_i" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q3_i" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">4.I try to find patterns in information.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q4_i" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q4_i" value="4"> Agree</label><br>
+                <label><input type="radio" name="q4_i" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q4_i" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q4_i" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">5.I enjoy researching new topics.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q5_i" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q5_i" value="4"> Agree</label><br>
+                <label><input type="radio" name="q5_i" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q5_i" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q5_i" value="1"> Strongly Disagree</label>
+            </div>
+        </div><br><br>
+
+
+
+        <h1 style="font-size: 25px; font-weight: bold;">Artistic</h1><br>
+        <div class="mb-6">
+            <p class="font-semibold">1.I like writing stories, poems, or content.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q1_a" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q1_a" value="4"> Agree</label><br>
+                <label><input type="radio" name="q1_a" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q1_a" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q1_a" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">2.I enjoy to do music, dance, or drama activities.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q2_a" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q2_a" value="4"> Agree</label><br>
+                <label><input type="radio" name="q2_a" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q2_a" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q2_a" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">3.I enjoy designing posters or digital content.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q3_a" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q3_a" value="4"> Agree</label><br>
+                <label><input type="radio" name="q3_a" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q3_a" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q3_a" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">4.I prefer creative projects over structured assignments.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q4_a" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q4_a" value="4"> Agree</label><br>
+                <label><input type="radio" name="q4_a" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q4_a" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q4_a" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">5.I think of new and unique ideas often.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q5_a" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q5_a" value="4"> Agree</label><br>
+                <label><input type="radio" name="q5_a" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q5_a" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q5_a" value="1"> Strongly Disagree</label>
+            </div>
+        </div><br><br>
+
+
+
+        <h1 style="font-size: 25px; font-weight: bold;">Social (Helping, Teaching, Supporting)</h1><br>
+        <div class="mb-6">
+            <p class="font-semibold">1.I enjoy helping others solve problems.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q1_s" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q1_s" value="4"> Agree</label><br>
+                <label><input type="radio" name="q1_s" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q1_s" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q1_s" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">2.I feel happy when someone understands something because of me.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q2_s" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q2_s" value="4"> Agree</label><br>
+                <label><input type="radio" name="q2_s" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q2_s" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q2_s" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">3.I prefer group work over working alone.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q3_s" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q3_s" value="4"> Agree</label><br>
+                <label><input type="radio" name="q3_s" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q3_s" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q3_s" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">4.I enjoy volunteering or social work.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q4_s" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q4_s" value="4"> Agree</label><br>
+                <label><input type="radio" name="q4_s" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q4_s" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q4_s" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">5.I enjoy counseling or guiding friends.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q5_s" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q5_s" value="4"> Agree</label><br>
+                <label><input type="radio" name="q5_s" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q5_s" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q5_s" value="1"> Strongly Disagree</label>
+            </div>
+        </div><br><br>
+
+        
+
+         <h1 style="font-size: 25px; font-weight: bold;">Enterprising (Leadership, Business, Persuasion)</h1><br>
+        <div class="mb-6">
+            <p class="font-semibold">1.I enjoy leading a group.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q1_e" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q1_e" value="4"> Agree</label><br>
+                <label><input type="radio" name="q1_e" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q1_e" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q1_e" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">2.I feel confident speaking in public.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q2_e" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q2_e" value="4"> Agree</label><br>
+                <label><input type="radio" name="q2_e" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q2_e" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q2_e" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">3.I am interested in business or startups.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q3_e" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q3_e" value="4"> Agree</label><br>
+                <label><input type="radio" name="q3_e" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q3_e" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q3_e" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">4.I like organizing events or activities.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q4_e" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q4_e" value="4"> Agree</label><br>
+                <label><input type="radio" name="q4_e" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q4_e" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q4_e" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">5.I enjoy taking risks to achieve success.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q5_e" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q5_e" value="4"> Agree</label><br>
+                <label><input type="radio" name="q5_e" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q5_e" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q5_e" value="1"> Strongly Disagree</label>
+            </div>
+        </div><br><br>
+
+         <h1 style="font-size: 25px; font-weight: bold;">Conventional (Organized, Structured, Detail-Oriented)</h1><br>
+        <div class="mb-6">
+            <p class="font-semibold">1.I prefer clear rules and structure.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q1_c" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q1_c" value="4"> Agree</label><br>
+                <label><input type="radio" name="q1_c" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q1_c" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q1_c" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">2.I follow instructions carefully.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q2_c" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q2_c" value="4"> Agree</label><br>
+                <label><input type="radio" name="q2_c" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q2_c" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q2_c" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">3.I enjoy planning schedules.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q3_c" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q3_c" value="4"> Agree</label><br>
+                <label><input type="radio" name="q3_c" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q3_c" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q3_c" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">4.I would prefer stable job environments.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q4_c" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q4_c" value="4"> Agree</label><br>
+                <label><input type="radio" name="q4_c" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q4_c" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q4_c" value="1"> Strongly Disagree</label>
+            </div>
+        </div>
+        <div class="mb-6">
+            <p class="font-semibold">5.I prefer routine tasks over unpredictable ones.</p>
+            <div class="space-y-1 mt-2">
+                <label><input type="radio" name="q5_c" value="5"> Strongly Agree</label><br>
+                <label><input type="radio" name="q5_c" value="4"> Agree</label><br>
+                <label><input type="radio" name="q5_c" value="3"> Neutral</label><br>
+                <label><input type="radio" name="q5_c" value="2"> Disagree</label><br>
+                <label><input type="radio" name="q5_c" value="1"> Strongly Disagree</label>
+            </div>
+        </div><br><br>
+
+        <div class="text-center">
+            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-800">
+                Submit Quiz
+            </button>
+        </div>
+
+    </form>
+
+
+
+</div>
+
+</body>
+</html>

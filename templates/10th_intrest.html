@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interest Assessment</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+function updateValue(slider, outputId) {
+    document.getElementById(outputId).innerText = slider.value;
+}
+</script>
+
+</head>
+
+<body class="bg-gradient-to-br from-blue-600 to-green-500 min-h-screen flex justify-center items-center">
+
+<div class="bg-white shadow-2xl rounded-2xl p-8 w-full max-w-4xl">
+
+<h1 class="text-3xl font-bold text-center mb-2">
+Interest & Personality Assessment
+</h1>
+
+<p class="text-center text-gray-600 mb-6">
+Rate each statement from <b>1 (Not at all)</b> to <b>5 (Very much)</b>
+</p>
+
+<form method="POST" action="/interest_assessment">
+
+<!-- SECTION 1 -->
+<h2 class="text-xl font-bold mb-4">1️⃣ Subject Enjoyment</h2>
+
+<div class="space-y-6">
+
+<!-- Maths -->
+<div>
+<label class="font-medium">
+I enjoy solving Mathematics problems.
+</label>
+
+<div class="flex items-center gap-4">
+<input type="range" name="interest_math" min="1" max="5" value="3"
+oninput="updateValue(this,'math_val')" class="w-full">
+<span id="math_val" class="font-bold text-blue-600">3</span>
+</div>
+</div>
+
+<!-- Science -->
+<div>
+<label class="font-medium">
+I like studying Science and experiments.
+</label>
+
+<div class="flex items-center gap-4">
+<input type="range" name="interest_science" min="1" max="5" value="3"
+oninput="updateValue(this,'science_val')" class="w-full">
+<span id="science_val" class="font-bold text-blue-600">3</span>
+</div>
+</div>
+
+<!-- Business -->
+<div>
+<label class="font-medium">
+I enjoy Business and money-related topics.
+</label>
+
+<div class="flex items-center gap-4">
+<input type="range" name="interest_business" min="1" max="5" value="3"
+oninput="updateValue(this,'business_val')" class="w-full">
+<span id="business_val" class="font-bold text-blue-600">3</span>
+</div>
+</div>
+
+<!-- Creative -->
+<div>
+<label class="font-medium">
+I enjoy creative subjects like drawing or writing.
+</label>
+
+<div class="flex items-center gap-4">
+<input type="range" name="interest_creative" min="1" max="5" value="3"
+oninput="updateValue(this,'creative_val')" class="w-full">
+<span id="creative_val" class="font-bold text-blue-600">3</span>
+</div>
+</div>
+
+<!-- Social -->
+<div>
+<label class="font-medium">
+I like Social Studies and understanding society.
+</label>
+
+<div class="flex items-center gap-4">
+<input type="range" name="interest_social" min="1" max="5" value="3"
+oninput="updateValue(this,'social_val')" class="w-full">
+<span id="social_val" class="font-bold text-blue-600">3</span>
+</div>
+</div>
+
+</div>
+
+<!-- SUBMIT -->
+<div class="text-center mt-8">
+<button type="submit"
+class="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-800 font-bold text-lg">
+Generate My Career Profile
+</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
